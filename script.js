@@ -29,7 +29,6 @@ buttons.addEventListener('click', function (event) {
         }
         previousKey = 'number';
       }
-      // !!!문제 = -연산자만 제대로 작동을 하지 않음!!!!
       if (action === 'operator') {
         target.classList.add('isPressed');
         if (firstNum && operatorForAdvanced && previousKey !== 'operator' && previousKey !== 'calculate') {
