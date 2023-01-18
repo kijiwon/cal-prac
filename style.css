@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px; */
+    /* margin-right: 50px; */
+    background-color: rgba(222, 222, 222, 0.5);
+    background-image: url(./배경.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right;
+
+}
+.cal {
+    /* border: 1px solid black; */
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5d5e6d;
+    border: none;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 50px 0 0 ;
+    box-shadow: 4px 4px 3px  rgba(62, 75, 90, 0.5);
+}
+.head {
+    /* border: 1px solid green; */
+    margin: 5px 0 5px 5px;
+    flex-basis: 0.5;
+
+}
+.head > button{
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(204, 27, 27);
+    color: #252323;
+}
+.display {
+    border: 1px solid rgb(75, 75, 78);
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    width: 380px;
+    height: 120px;
+    font-size: 50px;
+    text-align: end;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+    /* flex-grow: 1; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    background-color: rgb(253, 252, 250);
+}
+/* .display > input{
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    padding-right: 20px;
+    text-align: end;
+    border: none;
+    background-color: inherit;
+} */
+.input {
+    /* border: 1px solid pink; */
+    flex-grow: 4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+}
+.input_btn {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-bottom: 5px;
+}
+.input_btn>button{
+    flex-basis: 0;
+    flex-grow: 0.3;
+    border-radius: 30px;
+    margin: 3px;
+    border: none;
+    background-color: white;
+    box-shadow: 3px 3px 4px 0 rgba(47, 50, 62, 0.618);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.row5>button{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.row5>button:last-child{
+    flex-grow: 2.2;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgb(31, 34, 82);
+    box-shadow: 3px 3px 4px rgba(17, 14, 38, 0.076);
+}
+.input_btn>button:before {
+    height: 0%;
+    width: 2px;
+    }
+.input_btn>button:active {
+box-shadow:  4px 4px 6px 0 rgba(68, 70, 77, 0.5),
+    -4px -4px 6px 0 rgba(71, 77, 84, 0.5), 
+    inset -3px -3px 6px 0 rgba(58, 58, 61, 0.2),
+    inset 3px 3px 6px 0 rgba(0, 0, 0, .4);
+}
