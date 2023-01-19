@@ -29,6 +29,7 @@ buttons.addEventListener('click', function (event) {
         }
         previousKey = 'number';
       }
+      
       if (action === 'operator') {
         target.classList.add('isPressed');
         if (firstNum && operatorForAdvanced && previousKey !== 'operator' && previousKey !== 'calculate') {
@@ -79,7 +80,7 @@ function calculate(n1, operator, n2) {
     if (operator === '-') {
       result = Number(n1) - Number(n2);
     }
-    if (operator === '*') {
+    if (operator === 'x') {
       result = Number(n1) * Number(n2);
     }
     if (operator === '/') {
